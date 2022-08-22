@@ -1,0 +1,76 @@
+body{
+	height: 100%;
+	width: 100%;
+	background: black;
+}
+.round{
+	width: 350px;
+	height: 400px;
+	background: #F0EDFF;
+	position: absolute;
+	left: 500px;
+	top: 40px;
+	float: left;
+}
+
+.round::before{
+	content:"";
+	width: 185px;
+	height: 185px;
+	background: #FF8C00;
+	border-radius: 50%;
+	position: inherit;
+	opacity: 0.8;
+	top: 60px;
+	right: 30px;
+	float: left;
+	z-index: 2;
+}
+.round::after{
+	content: "";
+	width: 185px;
+	height: 185px;
+	background: #FF2521;
+	border-radius: 50%;
+	position: inherit;
+	float: left;
+	left: 30px;
+	top: 60px;
+	z-index: 1;
+}
+.word{
+    width: 350px;
+	height: 80px;
+	background: #F0EDFF;
+	position: inherit;
+	top: 260px;
+	bottom: 80px;
+	float: left;
+	text-align: center;
+	font-size: 50px;
+}
+.word::after{
+	content: "R";
+    width: 5px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 100%;
+    font-size: 5px;
+    position: inherit;
+    float: left;
+    left: 285px;
+    top: 40px;
+    color: black;
+}
+.word::before{
+	content:"TM";
+	font-size: 4px;
+	font-family: Arial Black;
+	position: inherit;
+	float: left;
+	left: 284px;
+	top: -35px;
+	color: #FF8C00;
+}
